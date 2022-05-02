@@ -36,7 +36,6 @@ function minesweeper( matrix ) {
                 if(matrix[i-1][j]) mines += 1;
                 if(matrix[i-1][j+1]) mines += 1;
             }
-            
             if(i < a - 1) {
                 if(matrix[i+1][j-1]) mines += 1;
                 if(matrix[i+1][j]) mines += 1;
@@ -45,7 +44,6 @@ function minesweeper( matrix ) {
             if(matrix[i][j-1]) mines += 1;
             if(matrix[i][j+1]) mines += 1;
             output[i][j] = mines;
-
         }
     }
     

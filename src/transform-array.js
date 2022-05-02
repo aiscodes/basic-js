@@ -14,26 +14,27 @@ const { NotImplementedError } = require('../extensions/index.js');
  * 
  */
 function transform( arr) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === '--discard-next') {
-        let result = arr.slice(0, i) + "," + arr.slice(i + 2);
-        let newArray = result;
-        return newArray;
-    } else if (arr[i] === '--discard-prev') {
-        let result = arr.slice(0, i - 1) + "," + arr.slice(i + 1);
-        let newArray = result;
-        return newArray;
-    } else if (arr[i] === '--double-next') {
-        let result = arr.slice(0, i) + "," + arr[i + 1] + "," + arr.slice(i + 1);
-        let newArray = result;
-        return newArray;
-    } else if (arr[i] === '--double-prev') {
-        let result = arr.slice(0, i) + "," + arr[i - 1] + "," + arr.slice(i + 1);
-        let newArray = result;
+  throw new NotImplementedError('Not implemented');
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === '--discard-next') {
+//         let result = arr.slice(0, i) + "," + arr.slice(i + 2);
+//         let newArray = result;
+//         return newArray;
+//     } else if (arr[i] === '--discard-prev') {
+//         let result = arr.slice(0, i - 1) + "," + arr.slice(i + 1);
+//         let newArray = result;
+//         return newArray;
+//     } else if (arr[i] === '--double-next') {
+//         let result = arr.slice(0, i) + "," + arr[i + 1] + "," + arr.slice(i + 1);
+//         let newArray = result;
+//         return newArray;
+//     } else if (arr[i] === '--double-prev') {
+//         let result = arr.slice(0, i) + "," + arr[i - 1] + "," + arr.slice(i + 1);
+//         let newArray = result;
     
-        return newArray;
-    }
-}
+//         return newArray;
+//     }
+// }
 }
 
 module.exports = {
